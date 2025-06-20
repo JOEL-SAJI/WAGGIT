@@ -79,5 +79,5 @@ waggit-main/
 
 ## Author
 
-[https://github.com/JOEL-SAJI](Johny)
-[http://localhost/phpfile/](Joel Saji)
+[https://github.com/Johnyjoji](Johny)
+[https://github.com/JOEL-SAJI](Joel Saji)
