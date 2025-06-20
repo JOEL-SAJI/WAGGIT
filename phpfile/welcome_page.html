@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waggit - Pet Commerce Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .tab-link {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .tab-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero {
+            height: 500px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/500');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .cta-btn {
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .buyer-btn {
+            background-color: #e67e22;
+            color: white;
+        }
+        
+        .buyer-btn:hover {
+            background-color: #d35400;
+        }
+        
+        .seller-btn {
+            background-color: #2ecc71;
+            color: white;
+        }
+        
+        .seller-btn:hover {
+            background-color: #27ae60;
+        }
+        
+        .features {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #333;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        
+        .feature-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        
+        .feature-desc {
+            color: #777;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #f5f5f5;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <div class="logo">
+                <h1>Waggit</h1>
+            </div>
+            <div class="tabs">
+                <a href="seller_login.html" class="tab-link">Sellers</a>
+                <a href="buyer_login.html" class="tab-link">Buyers</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Waggit</h2>
+            <p>The premier marketplace for all your pet needs. Whether you're looking to buy high-quality pet products or sell your pet-related merchandise, Waggit connects pet lovers across the globe.</p>
+            <div class="cta-buttons">
+                <a href="buyer_login.html" class="cta-btn buyer-btn">Shop Now</a>
+                <a href="seller_login.html" class="cta-btn seller-btn">Start Selling</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features container">
+        <h2 class="section-title">Why Choose Waggit?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🛒</div>
+                <h3 class="feature-title">Vast Selection</h3>
+                <p class="feature-desc">Browse thousands of pet products from trusted sellers worldwide. Find everything your furry friend needs in one place.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3 class="feature-title">Competitive Pricing</h3>
+                <p class="feature-desc">Compare prices from multiple sellers to get the best deals on pet food, toys, accessories, and more.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">Secure Transactions</h3>
+                <p class="feature-desc">Shop with confidence knowing all transactions are secure and your information is protected.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📦</div>
+                <h3 class="feature-title">Fast Shipping</h3>
+                <p class="feature-desc">Get your pet supplies delivered quickly and efficiently to your doorstep.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💼</div>
+                <h3 class="feature-title">Seller Dashboard</h3>
+                <p class="feature-desc">Manage your inventory, track sales, and grow your pet business with our intuitive seller tools.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <h3 class="feature-title">Verified Reviews</h3>
+                <p class="feature-desc">Make informed decisions with honest feedback from real buyers and sellers.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <h1>Waggit</h1>
+            </div>
+            <p>&copy; 2025 Waggit. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
