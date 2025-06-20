@@ -79,5 +79,6 @@ waggit-main/
 
 ## Author
 
-[https://github.com/Johnyjoji](Johny)
-[https://github.com/JOEL-SAJI](Joel Saji)
+- [Johny](https://github.com/Johnyjoji)  
+- [Joel Saji](https://github.com/JOEL-SAJI)
+
