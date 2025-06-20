@@ -6,7 +6,7 @@ This is a full-stack pet store application built with HTML, CSS, JavaScript (Rea
 
 - [XAMPP](https://www.apachefriends.org/) (for PHP and MySQL)
 - [Node.js & npm](https://nodejs.org/)
-- [Python](https://www.python.org/) (optional or specify usage if needed)
+- [Python](https://www.python.org/)
 
 ## Setup Instructions
 
